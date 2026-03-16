@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+body{
+  background-color: #111;
+}
+.Container{
+  width: 500px;
+  background-color: #555;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin: 150px auto;
+  min-height: 300px;
+}
+.Container h2{
+  text-align: center;
+  margin: 20px;
+  font-size: 29px;
+} 
+.sameVal{
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+input{
+  margin-left: 30px;
+  width: 300px;
+  padding-left: 5px;
+  color: rgb(53, 52, 52);
+}
+input::placeholder{
+  color: darkgray;
+}
+input:focus{
+  outline: none;
+}
+button{
+  width: 100px;
+  margin-left: 12px;
+  color: black;
+  background-color: green;
+  cursor: pointer;
+}
+ul{
+  margin-top: 30px;
+}
+ul li{
+  list-style-type: none;
+}
+li{
+  display: flex;
+  height: 55px;
+}
+p{
+  width: 295px;
+  padding-top: 12px;
+  margin-left: 40px;
+  font-size: 25px;
+}
+#deleteBtn{
+  background-color: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <link rel="stylesheet" href="/stylsheets/index.css">
+</head>
+<body>
+
+  <div class="Container">
+    <h2>Todo List</h2>
+
+    <form action="/todo" method="post">
+      <input type="text" placeholder="enter todos..." name="todoVal" class="sameVal">
+      <button type="submit" class="sameVal">Add</button>
+    </form>
+
+    <ul>
+      <% for(let i=0;i<inputBox.length;i++){ %>
+        <li>
+          <p>
+            <%= inputBox[i] %>
+          </p>
+          <form action="/delete" method="post">
+            <input type="hidden" name="index" value="<%= i %>">
+            <button class="sameVal" id="deleteBtn">delete</button>
+          </form>
+        </li>
+      <% } %>
+    </ul>
+
+  </div>
+  <% if(message){ %>
+      <script>
+        alert("<%= message %>")
+      </script>
+    <% } %>
+</body>
+</html>
